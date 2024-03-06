@@ -1,0 +1,9 @@
+{
+	"name": "kranthiconfgadfpipeline",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "62416236-7564-4965-a446-ac16483efb7d",
+		"tenantId": "abc7b3b4-0474-4c36-8f68-7f18035fed58"
+	}
+}
