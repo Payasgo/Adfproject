@@ -4,7 +4,8 @@
 		"globalConfigurations": {
 			"factoryStagingFolderPath": "raw",
 			"factoryStagingLSReferenceName": "LS_stage_linkedService",
-			"factoryStagingLSType": "LinkedServiceReference"
+			"factoryStagingLSType": "LinkedServiceReference",
+			"PipelineBillingEnabled": "true"
 		}
 	},
 	"location": "eastus",
