@@ -5,8 +5,8 @@
 		"annotations": [],
 		"type": "SqlServer",
 		"typeProperties": {
-			"connectionString": "integrated security=False;data source=KRANTHI;initial catalog=CONTACTS;user id=yarli",
-			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiI2ZjQyYTU0NS1kNTBjLTRkYTUtYWFhNi01NDMwMTEyYjIwNzkiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+			"connectionString": "integrated security=False;data source=KRANTHI;initial catalog=EMPLOYEE;user id=yarli",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiJjMjZhZTI0My01NWFmLTQ1YTctODcwYi1kMjM0NDQwNzQ1OGIiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
 		},
 		"connectVia": {
 			"referenceName": "SHIRintegrationRuntime",
