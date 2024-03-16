@@ -8,6 +8,9 @@
 		"LS_AzureDataLakeStorage_accountKey": {
 			"value": ""
 		},
+		"LS_AzureDatabricks_accessToken": {
+			"value": ""
+		},
 		"LS_AzureSqlDatabase_connectionString": {
 			"value": ""
 		},
@@ -19,6 +22,9 @@
 		},
 		"LS_AzureDataLakeStorage_properties_typeProperties_url": {
 			"value": "https://surcecpysc.dfs.core.windows.net/"
+		},
+		"LS_AzureDatabricks_properties_typeProperties_existingClusterId": {
+			"value": "0313-092624-lchagjet"
 		}
 	}
 }
