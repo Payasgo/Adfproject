@@ -65,7 +65,7 @@
 				"annotations": [],
 				"type": "AzureDatabricks",
 				"typeProperties": {
-					"domain": "https://adb-4515956809263537.17.azuredatabricks.net",
+					"domain": "https://adb-4515956809263537.17.azuredatabricks.net/",
 					"accessToken": {
 						"type": "SecureString",
 						"value": "[parameters('LS_AzureDatabricks_accessToken')]"
