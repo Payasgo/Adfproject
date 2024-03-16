@@ -15,44 +15,32 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"notebookPath": "/Users/rohidsk@orf944.onmicrosoft.com/my_newnotebook_for_pipeline"
+					"notebookPath": {
+						"value": "@pipeline().parameters.Notebook_Path",
+						"type": "Expression"
+					},
+					"baseParameters": {
+						"DataFactoryName": {
+							"value": "@pipeline().DataFactory",
+							"type": "Expression"
+						},
+						"Pipeline": {
+							"value": "@pipeline().Pipeline",
+							"type": "Expression"
+						}
+					}
 				},
 				"linkedServiceName": {
 					"referenceName": "LS_AzureDatabricks",
 					"type": "LinkedServiceReference"
 				}
-			},
-			{
-				"name": "Set variable",
-				"type": "SetVariable",
-				"dependsOn": [
-					{
-						"activity": "Notebook",
-						"dependencyConditions": [
-							"Succeeded"
-						]
-					}
-				],
-				"policy": {
-					"secureOutput": false,
-					"secureInput": false
-				},
-				"userProperties": [],
-				"typeProperties": {
-					"variableName": "pipelineReturnValue",
-					"value": [
-						{
-							"key": "tablenmae",
-							"value": {
-								"type": "String",
-								"content": "my_newnotebook_for_pipeline"
-							}
-						}
-					],
-					"setSystemVariable": true
-				}
 			}
 		],
+		"parameters": {
+			"Notebook_Path": {
+				"type": "string"
+			}
+		},
 		"annotations": []
 	}
 }
