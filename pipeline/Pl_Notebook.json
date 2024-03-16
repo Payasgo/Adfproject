@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Notebook1",
+				"name": "Notebook",
 				"type": "DatabricksNotebook",
 				"dependsOn": [],
 				"policy": {
@@ -20,6 +20,36 @@
 				"linkedServiceName": {
 					"referenceName": "LS_AzureDatabricks",
 					"type": "LinkedServiceReference"
+				}
+			},
+			{
+				"name": "Set variable",
+				"type": "SetVariable",
+				"dependsOn": [
+					{
+						"activity": "Notebook",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "pipelineReturnValue",
+					"value": [
+						{
+							"key": "tablenmae",
+							"value": {
+								"type": "String",
+								"content": "my_newnotebook_for_pipeline"
+							}
+						}
+					],
+					"setSystemVariable": true
 				}
 			}
 		],
