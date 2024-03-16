@@ -216,7 +216,7 @@
 						},
 						"userProperties": [],
 						"typeProperties": {
-							"notebookPath": "/Users/rohidsk@orf944.onmicrosoft.com/BLOB TO DATA BRICKS"
+							"notebookPath": "/Users/rohidsk@orf944.onmicrosoft.com/my_newnotebook_for_pipeline"
 						},
 						"linkedServiceName": {
 							"referenceName": "LS_AzureDatabricks",
